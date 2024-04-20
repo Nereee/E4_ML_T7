@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Trebuchet MS";
+  }
+  
+  body {
+    background-image: linear-gradient(180deg, #7d4159 0, #773959 12.5%, 
+    #6f3159 25%, #652859 37.5%, #591f59 50%, #4b185a 62.5%, #3a135b 75%, #24125d 87.5%, #00125f 100%);
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #buelta {
+    width: 40px
+  }
+  
+  .kutxa {
+    border-radius: 5% 5%;
+    padding: 20px;
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  form {
+    flex: 1;
+  }
+  
+  .kutxa h1 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  
+  #erabiltzailea,
+  #pasahitza {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+  }
+  
+  label {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .userkutxa {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .userkutxa img {
+    margin-left: 2px;
+    width: 20px;
+  }
+  
+  #jarraitu {
+    background: purple;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  #jarraitu:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px purple;
+  }
+
+
+
+  
