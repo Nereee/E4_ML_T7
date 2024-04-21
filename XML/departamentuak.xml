@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enpresa>
+    <zentrua>
+        <helbidea>
+            <auzoa>Etxepare, 14</auzoa>
+            <PK>48015</PK>
+            <hiria>Elorrieta</hiria>
+            <herrialdea>Bizkaia</herrialdea>
+        </helbidea>
+        <kontaktuTLF>978 757 865</kontaktuTLF>
+        <kontaktuemaila>jpammusic@gmail.com</kontaktuemaila>
+    </zentrua>
+    <!-- Departamentu zatia -->
+    <departamentuak>
+        <departamentua id="D01">
+            <izena>Marketing</izena>
+            <departamentuBurua>D03</departamentuBurua>
+            <aurrekontua moneda="€">30000</aurrekontua>
+            <telefonoa>985 362 489</telefonoa>
+        </departamentua>
+        <departamentua id="D02">
+            <izena>RRHH</izena>
+            <aurrekontua moneda="€">10000</aurrekontua>
+            <telefonoa>978 412 469</telefonoa>
+        </departamentua>
+        <departamentua id="D03">
+            <izena>Salmentak</izena>
+            <departamentuBurua>D05</departamentuBurua>
+            <aurrekontua moneda="€">40000</aurrekontua>
+            <telefonoa>934 124 643</telefonoa>
+        </departamentua>
+        <departamentua id="D04">
+            <izena>Logistika</izena>
+            <departamentuBurua>D02</departamentuBurua>
+            <aurrekontua moneda="€">20000</aurrekontua>
+            <telefonoa>964 895 153</telefonoa>
+        </departamentua>
+        <departamentua id="D05">
+            <izena>Finantzak</izena>
+            <aurrekontua moneda="€">50000</aurrekontua>
+            <telefonoa>963 239 836</telefonoa>
+        </departamentua>
+    </departamentuak>
+    <!-- Langileen zatia -->
+    <langileak>
+        <!-- Langile 1 -->
+        <langilea idDEPT="D01">
+            <izena>Juan Francisco</izena>
+            <abizena>Salmeron</abizena>
+            <JaiotzeData>1979/12/23</JaiotzeData>
+            <telefonoak>
+                <telefonoa>675 894 654</telefonoa>
+                <telefonoa>635 826 823</telefonoa>
+            </telefonoak>
+            <emaila>juanfran@gmail.com</emaila>
+            <soldata moneda="€">1580</soldata>
+            <kontratazioaData>2012/07/04</kontratazioaData>
+            <ardurak>
+                <ardura>A02</ardura>
+            </ardurak>
+        </langilea>
+        <!-- Langile 2 -->
+        <langilea idDEPT="D01">
+            <izena>Naroa</izena>
+            <abizena>Puertas</abizena>
+            <JaiotzeData>1992/02/03</JaiotzeData>
+            <telefonoak>
+                <telefonoa>687 877 967</telefonoa>
+                <telefonoa>658 986 567</telefonoa>
+            </telefonoak>
+            <emaila>naroapuert@gmail.com</emaila>
+            <soldata moneda="€">1290</soldata>
+            <kontratazioaData>2023/11/12</kontratazioaData>
+            <ardurak>
+                <ardura>A01</ardura>
+            </ardurak>
+        </langilea>
+        <!-- Langile 3 -->
+        <langilea idDEPT="D02">
+            <izena>Leire</izena>
+            <abizena>Trigo</abizena>
+            <JaiotzeData>1995/11/19</JaiotzeData>
+            <telefonoak>
+                <telefonoa>676 827 912</telefonoa>
+            </telefonoak>
+            <emaila>leiretrig@gmail.com</emaila>
+            <soldata moneda="€">1180</soldata>
+            <kontratazioaData>2020/02/16</kontratazioaData>
+            <ardurak>
+                <ardura>A04</ardura>
+            </ardurak>
+        </langilea>
+        <!-- Langile 4 -->
+        <langilea idDEPT="D03">
+            <izena>Noe</izena>
+            <abizena>Viñas</abizena>
+            <JaiotzeData>1990/08/17</JaiotzeData>
+            <telefonoak>
+                <telefonoa>673 923 847</telefonoa>
+            </telefonoak>
+            <emaila>noevina@gmail.com</emaila>
+            <soldata moneda="€">1150</soldata>
+            <kontratazioaData>2018/07/31</kontratazioaData>
+            <ardurak>
+                <ardura>A03</ardura>
+            </ardurak>
+        </langilea>
+        <!-- Langile 5 -->
+        <langilea idDEPT="D04">
+            <izena>Andoni</izena>
+            <abizena>Moran</abizena>
+            <JaiotzeData>1995/06/01</JaiotzeData>
+            <telefonoak>
+                <telefonoa>689 875 723</telefonoa>
+            </telefonoak>
+            <emaila>andonimora@gmail.com</emaila>
+            <soldata moneda="€">1180</soldata>
+            <kontratazioaData>2019/04/21</kontratazioaData>
+            <ardurak>
+                <ardura>A02</ardura>
+                <ardura>A04</ardura>
+            </ardurak>
+        </langilea>
+        <!-- Langile 6 -->
+        <langilea idDEPT="D04">
+            <izena>Aimar</izena>
+            <abizena>Rial</abizena>
+            <JaiotzeData>1980/04/14</JaiotzeData>
+            <telefonoak>
+                <telefonoa>674 864 145</telefonoa>
+                <telefonoa>642 982 746</telefonoa>
+            </telefonoak>
+            <emaila>aimarria@gmail.com</emaila>
+            <soldata moneda="€">1160</soldata>
+            <kontratazioaData>2014/03/21</kontratazioaData>
+            <ardurak>
+                <ardura>A03</ardura>
+                <ardura>A04</ardura>
+            </ardurak>
+        </langilea>
+        <!-- Langile 7 -->
+        <langilea idDEPT="D02">
+            <izena>Eider</izena>
+            <abizena>Ugarte</abizena>
+            <JaiotzeData>1992/09/28</JaiotzeData>
+            <telefonoak>
+                <telefonoa>689 234 567</telefonoa>
+            </telefonoak>
+            <emaila>eiderugart@gmail.com</emaila>
+            <soldata moneda="€">1400</soldata>
+            <kontratazioaData>2018/07/15</kontratazioaData>
+            <ardurak>
+                <ardura>A01</ardura>
+            </ardurak>
+        </langilea>
+        <!-- Langile 8 -->
+        <langilea idDEPT="D03">
+            <izena>Jon</izena>
+            <abizena>Lopez</abizena>
+            <JaiotzeData>1985/12/03</JaiotzeData>
+            <telefonoak>
+                <telefonoa>645 987 321</telefonoa>
+                <telefonoa>673 732 632</telefonoa>
+            </telefonoak>
+            <emaila>jonlope@gmail.com</emaila>
+            <soldata moneda="€">1350</soldata>
+            <kontratazioaData>2013/05/10</kontratazioaData>
+            <ardurak>
+                <ardura>A02</ardura>
+            </ardurak>
+        </langilea>
+        <!-- Langile 9 -->
+        <langilea idDEPT="D01">
+            <izena>Ane</izena>
+            <abizena>Garcia</abizena>
+            <JaiotzeData>1990/07/20</JaiotzeData>
+            <telefonoak>
+                <telefonoa>678 456 123</telefonoa>
+            </telefonoak>
+            <emaila>anegarci@gmail.com</emaila>
+            <soldata moneda="€">1250</soldata>
+            <kontratazioaData>2017/02/18</kontratazioaData>
+            <ardurak>
+                <ardura>A05</ardura>
+            </ardurak>
+        </langilea>
+        <!-- Langile 10 -->
+        <langilea idDEPT="D04">
+            <izena>Markel</izena>
+            <abizena>Sanchez</abizena>
+            <JaiotzeData>1987/05/09</JaiotzeData>
+            <telefonoak>
+                <telefonoa>657 321 789</telefonoa>
+            </telefonoak>
+            <emaila>markelsanche@gmail.com</emaila>
+            <soldata moneda="€">1280</soldata>
+            <kontratazioaData>2015/09/03</kontratazioaData>
+            <ardurak>
+                <ardura>A03</ardura>
+                <ardura>A04</ardura>
+            </ardurak>
+        </langilea>
+    </langileak>
+    <!-- Arduren zatia -->
+    <ardurak>
+        <ardura id="A01">
+            <izena>Zuzendari Exekutiboa</izena>
+            <siglak>CEO</siglak>
+            <deskribapena>
+                Kudeaketa egiten du, administratzen du eta zuzendaritza ematen du enpresak nora jo
+                behar duen adierazteko.
+            </deskribapena>
+        </ardura>
+        <ardura id="A02">
+            <izena>Lan zuzendaria</izena>
+            <siglak>COO</siglak>
+            <deskribapena>
+                Plan estrategikoak ezartzeko eta negozioaren eragiketa guztiak aurreikusitako
+                denboran eta
+                kostuan bere helburuak lortzen dituela ziurtatzeko arduraduna.
+            </deskribapena>
+        </ardura>
+        <ardura id="A03">
+            <izena>Zuzendari komertziala</izena>
+            <siglak>CSO</siglak>
+            <deskribapena>
+                Gehieneko kargua da salmenta-sailaren barruan, eta haren funtzio nagusia da
+                plangintza
+                estrategikoaren helburuekin eta ikuspegiarekin bat datozen salmenta-planak ezartzea.
+            </deskribapena>
+        </ardura>
+        <ardura id="A04">
+            <izena>Marketineko zuzendaria</izena>
+            <siglak>CMO</siglak>
+            <deskribapena>
+                Marketinarekin lotuta jarraitu beharreko helburuak eta politikak ezartzea.
+                Merkatua eta lehia aztertzea.
+            </deskribapena>
+        </ardura>
+        <ardura id="A05">
+            <izena>Giza Baliabideen zuzendaria</izena>
+            <siglak>CHRO</siglak>
+            <deskribapena>
+                Langileen jarduerak eta lan-harremanak planifikatu, zuzendu eta koordinatzea,
+                baita konpainia baten politikak eta praktikak ere.
+            </deskribapena>
+        </ardura>
+    </ardurak>
+</enpresa>

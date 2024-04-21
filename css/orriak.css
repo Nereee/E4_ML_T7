@@ -1,0 +1,32 @@
+#zerrenda  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main h1 {
+    margin: 20px;
+}
+
+#zerrenda img {
+    width: 300px;
+    margin: 0 20px 10px 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    transition: all 0.2s ease-in;
+}
+
+#zerrenda p {
+    margin-bottom: 30px;
+}
+
+#zerrenda img:hover {
+    filter: brightness(70%);
+}
+
+.lerroa {
+    display: flex;
+    margin: 20px 20px 0 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
