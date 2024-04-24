@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="departamentuak.xsl"?>
-<enpresa izena = "JPAM MUSIC">
+<enpresa izena="JPAM MUSIC">
     <zentrua>
         <helbidea>
             <auzoa>Etxepare, 14</auzoa>
@@ -373,6 +373,27 @@
                 <postaKodea>48009</postaKodea>
             </bizilekua>
             <argazkia>../img/langileak/Maider.png</argazkia>
+        </langilea>
+        <!-- Langile 16 -->
+        <langilea idDEPT="D02">
+            <izena>Sandra</izena>
+            <abizena>Fidalgo</abizena>
+            <JaiotzeData>1995/04/15</JaiotzeData>
+            <telefonoak>
+                <telefonoa>678 987 654</telefonoa>
+            </telefonoak>
+            <emaila>sandrafidalgo@gmail.com</emaila>
+            <soldata moneda="€">1300</soldata>
+            <kontratazioaData>2020/01/05</kontratazioaData>
+            <ardurak>
+                <ardura>A01</ardura>
+            </ardurak>
+            <bizilekua>
+                <helbidea>Calle Diputación, 7</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48008</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Sandra.png</argazkia>
         </langilea>
     </langileak>
     <!-- Arduren zatia -->

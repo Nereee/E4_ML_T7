@@ -6,6 +6,7 @@
             <head>
                 <title>JPAM Departamentuak</title>
                 <link rel="stylesheet" type="text/css" href="../css/main.css" />
+                <link rel="stylesheet" type="text/css" href="../css/xsl.css" />
                 <link rel="shortcut icon" href="../img/logo/BlancoTransparente.png" />
             </head>
             <body>
@@ -39,14 +40,14 @@
                     </nav>
                 </div>
                 <main>
-                  <div class="zerrenda">
+                  <div id="langileak">
                         <xsl:for-each select="//langilea">
-                          <div class="kutxak">
+                          <div class="langilekutxa">
                             <img>
-                              <xsl:attribute name="src"><xsl:value-of select="//langilea/argazkia"></xsl:value-of></xsl:attribute>
-                              <xsl:attribute name="alt"><xsl:value-of select="//langilea/izena"></xsl:value-of></xsl:attribute>
+                              <xsl:attribute name="src"><xsl:value-of select="argazkia"></xsl:value-of></xsl:attribute>
+                              <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
                             </img>
-                            <p><xsl:value-of select="/izena"></xsl:value-of></p>
+                            <p><xsl:value-of select="izena"></xsl:value-of></p>
                           </div>
                         </xsl:for-each>
                   </div>
