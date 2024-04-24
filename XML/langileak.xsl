@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
     <xsl:output method="html" version="5"></xsl:output>
     <xsl:template match="/enpresa">
         <html>
@@ -13,9 +13,7 @@
             <body>
                 <header>
                     <img id="headerLogoa" src="../img/logo/BlancoTransparente.png" alt="logoa" />
-                    <h1>
-                        <xsl:value-of select="@izena" />
-                    </h1>
+                    <h1><xsl:value-of select="@izena"/></h1>
                     <h3>"Zure erritmoa, gure pasioa"</h3>
                 </header>
                 <div class="primary-nav">
@@ -42,44 +40,28 @@
                         </div>
                     </nav>
                 </div>
-                <main id ="DeptMain">
-                <div class="taulakutxa">
-                  <div class="tauladepart" role="region" tabindex="0">
-                      <table>
-                          <thead>
-                              <tr>
-                                  <th>Departamentu izena</th    >
-                                  <th>Departamentu aurrekontua</th>
-                                  <th>Departamentu telefonoa</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <xsl:for-each select="//departamentua">
-                                  <tr>
-                                      <td class = "DeptIzena">
-                                          <xsl:value-of select="izena"></xsl:value-of>
-                                      </td>
-                                      <td class = "Deptinfo">
-                                          <xsl:value-of select="aurrekontua"></xsl:value-of>
-                                      </td>
-                                      <td class = "Deptinfo">
-                                          <xsl:value-of select="telefonoa"></xsl:value-of>
-                                      </td>
-                                  </tr>
-                              </xsl:for-each>
-                          </tbody>
-                      </table>
-                    </div>
+                <main>
+                  <div id="langileak">
+                        <xsl:for-each select="//langilea">
+                          <div class="langilekutxa">
+                            <img>
+                              <xsl:attribute name="src"><xsl:value-of select="argazkia"></xsl:value-of></xsl:attribute>
+                              <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
+                            </img>
+                            <p><xsl:value-of select="izena"></xsl:value-of></p>
+                          </div>
+                        </xsl:for-each>
                   </div>
                 </main>
                 <footer>
                     <div id="footerKutxa1">
-                        <ul>
-                            <li>Kontaktu email-a: <a href="">jpammusic@gmail.com</a>
-                            </li>
-                            <li>Helbidea: Etxepare, 14, Elorrieta</li>
-                            <li>Telefonoa: +643 348 865</li>
-                        </ul>
+                      <ul>
+                        <li>Kontaktu email-a: 
+                          <a href="">jpammusic@gmail.com</a>
+                        </li>
+                        <li>Helbidea: Etxepare, 14, Elorrieta</li>
+                        <li>Telefonoa: +643 348 865</li>
+                    </ul> 
                     </div>
                     <div id="footerKutxa2">
                         <ul>
