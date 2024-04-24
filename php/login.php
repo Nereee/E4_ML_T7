@@ -30,7 +30,6 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
             exit;
         }
     } else {
-        $error_message = "Txarto";
        echo '<script>
                alert("Erabiltzaile edo pasahitza txarto sartu duzu");
                window.location.href = "login.php";
@@ -76,6 +75,5 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
         </form>
     </div>
 </main>
-
 </body>
 </html>
