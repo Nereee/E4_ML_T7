@@ -4,37 +4,25 @@ session_start();
 $error_message = "Ondo"; 
 
 if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
-    
+
     $servername = "localhost";
-    $username = "root";
-    $password = "";
+    $username = $_POST['erabiltzailea'];
+    $password = $_POST['pasahitza'];
     $db = "db_jpamt7";
 
     $mysqli = new mysqli($servername, $username, $password, $db);
 
     if ($mysqli->connect_error) {
         die("Connection failed: " . $mysqli->connect_error);
-    }
-
-    $erabiltzailea = $_POST["erabiltzailea"];
-    $pwd = $_POST["pasahitza"]; 
-
-    $sql = "SELECT IDBezeroa FROM bezeroa WHERE erabiltzailea = '$erabiltzailea' AND pasahitza = '$pwd'";
-    
-    $result = $mysqli->query($sql);
-
-    if ($result && $result->num_rows > 0) {
-        $_SESSION['erabiltzailea'] =  $erabiltzailea;
-        if (isset($erabiltzailea)) {
-            header("Location: ../xml/departamentuak.xml");
-            exit;
-        }
-    } else {
-       echo '<script>
+        echo '<script>
                alert("Erabiltzaile edo pasahitza txarto sartu duzu");
                window.location.href = "login.php";
-            </script>'
-    ;}
+            </script>';
+        
+    } else {
+        header("Location: ../html/aukeraketa.html");
+        exit;
+    }
 
     $mysqli->close();
 }

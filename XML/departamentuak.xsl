@@ -23,7 +23,7 @@
                         <span class="screen-reader-text">Menu</span>
                     </button>
                     <nav class="menu">
-                        <a href="#" class="logotype">JPAM<span>MUSIC</span></a>
+                        <a href="../index.html" class="logotype">JPAM<span>MUSIC</span></a>
                         <div class="overflow-container">
                             <ul class="menu-dropdown">
                                 <li>
