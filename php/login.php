@@ -13,7 +13,7 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
     $mysqli = new mysqli($servername, $username, $password, $db);
 
     if ($mysqli->connect_error) {
-        die("Connection failed: " . $mysqli->connect_error);
+       // die("Connection failed: " . $mysqli->connect_error);
         echo '<script>
                alert("Erabiltzaile edo pasahitza txarto sartu duzu");
                window.location.href = "login.php";
