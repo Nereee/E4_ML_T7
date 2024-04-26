@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" href="../img/logo/BlancoTransparente.png">
+    <title>JPAM Music</title>
+</head>
+<body>
+<main>
+    <div class="kutxa">
+        <a href="../index.html">
+            <img id="buelta" src="../img/loginIMG/ixa.svg" alt="buelta">
+        </a>
+        <h1>Zer nahi duzu ikusi?</h1>
+            <input type="button" value="Departamentuak" id="DeptBTN" class="BTNAukera">
+            <input type="button" value="Langileak" id="langileBTN" class="BTNAukera">
+    </div>
+</main>
+<script>
+
+    document.getElementById("DeptBTN").addEventListener("click", function(){
+        window.location.href = "../php/departamentuak.php";
+    });
+
+    document.getElementById("langileBTN").addEventListener("click", function(){
+        window.location.href = "../php/langileak.php";
+    });
+
+</script>
+</body>
+</html>

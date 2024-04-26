@@ -2,6 +2,7 @@ document.getElementById("menu_open").onclick = function (e) {
     e.preventDefault();
     document.querySelector("html").classList.toggle("openNav");
     document.querySelector(".nav-toggle").classList.toggle("active");
+    
   };
 
   const artistImages = document.querySelectorAll("#artistenIMG img");

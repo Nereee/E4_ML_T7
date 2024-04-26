@@ -1,46 +1,35 @@
 <?php
 session_start();
 
-$error_message = ""; 
+$error_message = "Ondo"; 
 
 if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
-    
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $db = "db_ElorrietaZinemaT4";
 
-    // Konexioa sortu
+    $servername = "localhost";
+    $username = $_POST['erabiltzailea'];
+    $password = $_POST['pasahitza'];
+    $db = "db_jpamt7";
+
     $mysqli = new mysqli($servername, $username, $password, $db);
 
-    // Konexioa egiaztatu
     if ($mysqli->connect_error) {
-        die("Connection failed: " . $mysqli->connect_error);
-    }
-
-    // Kontsulta
-    $erabiltzailea = $_POST["erabiltzailea"];
-    $pwd = $_POST["pasahitza"]; 
-
-    $sql = "SELECT idBezero FROM bezeroa WHERE erabiltzailea = '$erabiltzailea' AND pasahitza = '$pwd'";
-    
-    // Kontsulta egin db
-    $result = $mysqli->query($sql);
-
-    if ($result && $result->num_rows > 0) {
-        // Iniciar sesión y redirigir al usuario a la página de inicio
-        $_SESSION['erabiltzailea'] =  $erabiltzailea;
-        header("Location: sarrerak.php");
-        exit;
+       // die("Connection failed: " . $mysqli->connect_error);
+        echo '<script>
+               alert("Erabiltzaile edo pasahitza txarto sartu duzu");
+               window.location.href = "login.php";
+            </script>';
+        
     } else {
-        // Mostrar un mensaje de error si la autenticación falla
-        $error_message = "Pasahitza edo erabiltzailea ez dira zuzenak";
+        header("Location: ../html/aukeraketa.html");
+        exit;
     }
 
-    // Konexioa itxi
     $mysqli->close();
 }
+
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="eu">
@@ -69,13 +58,6 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
                 <label for="pasahitza">Pasahitza</label> <br>
             </div>
             <input type="password" id="pasahitza" name="pasahitza">
-
-            <?php
-              // Mostrar el mensaje de error si existe
-              if (!empty($error_message)) {
-                echo '<p style="color: yellow; text-align: center; font-weigth: bold;">' . $error_message . '</p>';
-              }
-            ?>
             <br>
             <input type="submit" id="jarraitu" value="Jarraitu">
         </form>

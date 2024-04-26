@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<enpresa>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<enpresa izena="JPAM MUSIC">
     <zentrua>
         <helbidea>
             <auzoa>Etxepare, 14</auzoa>
@@ -40,6 +40,12 @@
             <aurrekontua moneda="€">50000</aurrekontua>
             <telefonoa>963 239 836</telefonoa>
         </departamentua>
+        <departamentua id="D06">
+            <izena>Teknologia</izena>
+            <departamentuBurua>D05</departamentuBurua>
+            <aurrekontua moneda="€">45000</aurrekontua>
+            <telefonoa>910 123 456</telefonoa>
+        </departamentua>
     </departamentuak>
     <!-- Langileen zatia -->
     <langileak>
@@ -58,6 +64,12 @@
             <ardurak>
                 <ardura>A02</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Bailén Kalea, 25</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48003</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/JuanFran.png</argazkia>
         </langilea>
         <!-- Langile 2 -->
         <langilea idDEPT="D01">
@@ -74,6 +86,12 @@
             <ardurak>
                 <ardura>A01</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Santa María Kalea, 8</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48005</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Naroa.png</argazkia>
         </langilea>
         <!-- Langile 3 -->
         <langilea idDEPT="D02">
@@ -89,6 +107,12 @@
             <ardurak>
                 <ardura>A04</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Gran Vía, 55</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48009</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Leire.png</argazkia>
         </langilea>
         <!-- Langile 4 -->
         <langilea idDEPT="D03">
@@ -104,6 +128,12 @@
             <ardurak>
                 <ardura>A03</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Alameda Rekalde, 12</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48011</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Noe.png</argazkia>
         </langilea>
         <!-- Langile 5 -->
         <langilea idDEPT="D04">
@@ -120,6 +150,12 @@
                 <ardura>A02</ardura>
                 <ardura>A04</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Plaza Moyúa, 7</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48009</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Andoni.png</argazkia>
         </langilea>
         <!-- Langile 6 -->
         <langilea idDEPT="D04">
@@ -137,6 +173,12 @@
                 <ardura>A03</ardura>
                 <ardura>A04</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Kale Nagusia 6</helbidea>
+                <herria>Bilbo</herria>
+                <postaKodea>48001</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Aimar.png</argazkia>
         </langilea>
         <!-- Langile 7 -->
         <langilea idDEPT="D02">
@@ -152,6 +194,12 @@
             <ardurak>
                 <ardura>A01</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Paseo Uribitarte, 14</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48001</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Eider.png</argazkia>
         </langilea>
         <!-- Langile 8 -->
         <langilea idDEPT="D03">
@@ -168,6 +216,12 @@
             <ardurak>
                 <ardura>A02</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Barrenkale Barrena, 3</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48005</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Jon.png</argazkia>
         </langilea>
         <!-- Langile 9 -->
         <langilea idDEPT="D01">
@@ -183,6 +237,12 @@
             <ardurak>
                 <ardura>A05</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Calle Iparraguirre, 15</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48001</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Ane.png</argazkia>
         </langilea>
         <!-- Langile 10 -->
         <langilea idDEPT="D04">
@@ -199,6 +259,140 @@
                 <ardura>A03</ardura>
                 <ardura>A04</ardura>
             </ardurak>
+            <bizilekua>
+                <helbidea>Plaza Ensanche, 2</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48009</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Markel.png</argazkia>
+        </langilea>
+        <!-- Langile 11 -->
+        <langilea idDEPT="D02">
+            <izena>Maite</izena>
+            <abizena>Lopez</abizena>
+            <JaiotzeData>1993/08/05</JaiotzeData>
+            <telefonoak>
+                <telefonoa>678 456 789</telefonoa>
+            </telefonoak>
+            <emaila>maitelopez@gmail.com</emaila>
+            <soldata moneda="€">1350</soldata>
+            <kontratazioaData>2021/03/10</kontratazioaData>
+            <ardurak>
+                <ardura>A01</ardura>
+            </ardurak>
+            <bizilekua>
+                <helbidea>Gran Vía, 87</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48012</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Maite.png</argazkia>
+        </langilea>
+        <!-- Langile 12 -->
+        <langilea idDEPT="D03">
+            <izena>Julen</izena>
+            <abizena>Sanchez</abizena>
+            <JaiotzeData>1991/06/15</JaiotzeData>
+            <telefonoak>
+                <telefonoa>657 321 654</telefonoa>
+            </telefonoak>
+            <emaila>julensanchez@gmail.com</emaila>
+            <soldata moneda="€">1280</soldata>
+            <kontratazioaData>2019/09/25</kontratazioaData>
+            <ardurak>
+                <ardura>A03</ardura>
+                <ardura>A04</ardura>
+            </ardurak>
+            <bizilekua>
+                <helbidea>Plaza Circular, 10</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48001</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Julen.png</argazkia>
+        </langilea>
+        <!-- Langile 13 -->
+        <langilea idDEPT="D04">
+            <izena>Irati</izena>
+            <abizena>Alonso</abizena>
+            <JaiotzeData>1994/03/28</JaiotzeData>
+            <telefonoak>
+                <telefonoa>689 987 654</telefonoa>
+            </telefonoak>
+            <emaila>iratialonso@gmail.com</emaila>
+            <soldata moneda="€">1180</soldata>
+            <kontratazioaData>2020/07/15</kontratazioaData>
+            <ardurak>
+                <ardura>A02</ardura>
+                <ardura>A04</ardura>
+            </ardurak>
+            <bizilekua>
+                <helbidea>Paseo Campo Volantín, 23</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48007</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Irati.png</argazkia>
+        </langilea>
+        <!-- Langile 14 -->
+        <langilea idDEPT="D01">
+            <izena>Unai</izena>
+            <abizena>Ortega</abizena>
+            <JaiotzeData>1993/11/02</JaiotzeData>
+            <telefonoak>
+                <telefonoa>645 789 321</telefonoa>
+            </telefonoak>
+            <emaila>unaiortega@gmail.com</emaila>
+            <soldata moneda="€">1250</soldata>
+            <kontratazioaData>2018/05/20</kontratazioaData>
+            <ardurak>
+                <ardura>A05</ardura>
+            </ardurak>
+            <bizilekua>
+                <helbidea>Doctor Areilza Kalea, 30</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48010</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Unai.png</argazkia>
+        </langilea>
+        <!-- Langile 15 -->
+        <langilea idDEPT="D04">
+            <izena>Maider</izena>
+            <abizena>Mateos</abizena>
+            <JaiotzeData>1992/09/10</JaiotzeData>
+            <telefonoak>
+                <telefonoa>657 123 456</telefonoa>
+            </telefonoak>
+            <emaila>maidersanchez@gmail.com</emaila>
+            <soldata moneda="€">1160</soldata>
+            <kontratazioaData>2016/08/12</kontratazioaData>
+            <ardurak>
+                <ardura>A03</ardura>
+            <ardura>A04</ardura>f </ardurak>
+            <bizilekua>
+                <helbidea>Plaza de Euskadi, 5</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48009</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Maider.png</argazkia>
+        </langilea>
+        <!-- Langile 16 -->
+        <langilea idDEPT="D02">
+            <izena>Sandra</izena>
+            <abizena>Fidalgo</abizena>
+            <JaiotzeData>1995/04/15</JaiotzeData>
+            <telefonoak>
+                <telefonoa>678 987 654</telefonoa>
+            </telefonoak>
+            <emaila>sandrafidalgo@gmail.com</emaila>
+            <soldata moneda="€">1300</soldata>
+            <kontratazioaData>2020/01/05</kontratazioaData>
+            <ardurak>
+                <ardura>A01</ardura>
+            </ardurak>
+            <bizilekua>
+                <helbidea>Calle Diputación, 7</helbidea>
+                <herria>Bilbao</herria>
+                <postaKodea>48008</postaKodea>
+            </bizilekua>
+            <argazkia>../img/langileak/Sandra.png</argazkia>
         </langilea>
     </langileak>
     <!-- Arduren zatia -->
