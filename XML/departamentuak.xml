@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<enpresa izena="JPAM MUSIC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="departamentuak.xsd">
+<enpresa izena="JPAM MUSIC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="departamentuak.xsd">
     <zentrua>
         <helbidea>
             <auzoa>Etxepare, 14</auzoa>
@@ -365,7 +366,8 @@
             <kontratazioaData>2016/08/12</kontratazioaData>
             <ardurak>
                 <ardura>A03</ardura>
-            <ardura>A04</ardura>f </ardurak>
+                <ardura>A04</ardura>
+            </ardurak>
             <bizilekua>
                 <helbidea>Plaza de Euskadi, 5</helbidea>
                 <herria>Bilbao</herria>
