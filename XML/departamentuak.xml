@@ -8,7 +8,7 @@
             <hiria>Elorrieta</hiria>
             <herrialdea>Bizkaia</herrialdea>
         </helbidea>
-        <kontaktuTLF>978 757 865</kontaktuTLF>
+        <telefonoa>978757865</telefonoa>
         <kontaktuemaila>jpammusic@gmail.com</kontaktuemaila>
     </zentrua>
     <!-- Departamentu zatia -->
@@ -17,35 +17,35 @@
             <izena>Marketing</izena>
             <departamentuBurua>D03</departamentuBurua>
             <aurrekontua moneda="€">30000</aurrekontua>
-            <telefonoa>985 362 489</telefonoa>
+            <telefonoa>985362489</telefonoa>
         </departamentua>
         <departamentua id="D02">
             <izena>RRHH</izena>
             <aurrekontua moneda="€">10000</aurrekontua>
-            <telefonoa>978 412 469</telefonoa>
+            <telefonoa>978412469</telefonoa>
         </departamentua>
         <departamentua id="D03">
             <izena>Salmentak</izena>
             <departamentuBurua>D05</departamentuBurua>
             <aurrekontua moneda="€">40000</aurrekontua>
-            <telefonoa>934 124 643</telefonoa>
+            <telefonoa>934124643</telefonoa>
         </departamentua>
         <departamentua id="D04">
             <izena>Logistika</izena>
             <departamentuBurua>D02</departamentuBurua>
             <aurrekontua moneda="€">20000</aurrekontua>
-            <telefonoa>964 895 153</telefonoa>
+            <telefonoa>964895153</telefonoa>
         </departamentua>
         <departamentua id="D05">
             <izena>Finantzak</izena>
             <aurrekontua moneda="€">50000</aurrekontua>
-            <telefonoa>963 239 836</telefonoa>
+            <telefonoa>963239836</telefonoa>
         </departamentua>
         <departamentua id="D06">
             <izena>Teknologia</izena>
             <departamentuBurua>D05</departamentuBurua>
             <aurrekontua moneda="€">45000</aurrekontua>
-            <telefonoa>910 123 456</telefonoa>
+            <telefonoa>910123456</telefonoa>
         </departamentua>
     </departamentuak>
     <!-- Langileen zatia -->
@@ -54,14 +54,14 @@
         <langilea idDEPT="D01">
             <izena>Juan Francisco</izena>
             <abizena>Salmeron</abizena>
-            <JaiotzeData>1979/12/23</JaiotzeData>
+            <JaiotzeData>1979-12-23</JaiotzeData>
             <telefonoak>
-                <telefonoa>675 894 654</telefonoa>
-                <telefonoa>635 826 823</telefonoa>
+                <telefonoa>675894654</telefonoa>
+                <telefonoa>635826823</telefonoa>
             </telefonoak>
             <emaila>juanfran@gmail.com</emaila>
             <soldata moneda="€">1580</soldata>
-            <kontratazioaData>2012/07/04</kontratazioaData>
+            <kontratazioaData>2012-07-04</kontratazioaData>
             <ardurak>
                 <ardura>A02</ardura>
             </ardurak>
@@ -76,14 +76,14 @@
         <langilea idDEPT="D01">
             <izena>Naroa</izena>
             <abizena>Puertas</abizena>
-            <JaiotzeData>1992/02/03</JaiotzeData>
+            <JaiotzeData>1992-02-03</JaiotzeData>
             <telefonoak>
-                <telefonoa>687 877 967</telefonoa>
-                <telefonoa>658 986 567</telefonoa>
+                <telefonoa>687877967</telefonoa>
+                <telefonoa>658986567</telefonoa>
             </telefonoak>
             <emaila>naroapuert@gmail.com</emaila>
             <soldata moneda="€">1290</soldata>
-            <kontratazioaData>2023/11/12</kontratazioaData>
+            <kontratazioaData>2023-11-12</kontratazioaData>
             <ardurak>
                 <ardura>A01</ardura>
             </ardurak>
@@ -98,13 +98,13 @@
         <langilea idDEPT="D02">
             <izena>Leire</izena>
             <abizena>Trigo</abizena>
-            <JaiotzeData>1995/11/19</JaiotzeData>
+            <JaiotzeData>1995-11-19</JaiotzeData>
             <telefonoak>
-                <telefonoa>676 827 912</telefonoa>
+                <telefonoa>676827912</telefonoa>
             </telefonoak>
             <emaila>leiretrig@gmail.com</emaila>
             <soldata moneda="€">1180</soldata>
-            <kontratazioaData>2020/02/16</kontratazioaData>
+            <kontratazioaData>2020-02-16</kontratazioaData>
             <ardurak>
                 <ardura>A04</ardura>
             </ardurak>
@@ -119,13 +119,13 @@
         <langilea idDEPT="D03">
             <izena>Noe</izena>
             <abizena>Viñas</abizena>
-            <JaiotzeData>1990/08/17</JaiotzeData>
+            <JaiotzeData>1990-08-17</JaiotzeData>
             <telefonoak>
-                <telefonoa>673 923 847</telefonoa>
+                <telefonoa>673923847</telefonoa>
             </telefonoak>
             <emaila>noevina@gmail.com</emaila>
             <soldata moneda="€">1150</soldata>
-            <kontratazioaData>2018/07/31</kontratazioaData>
+            <kontratazioaData>2018-07-31</kontratazioaData>
             <ardurak>
                 <ardura>A03</ardura>
             </ardurak>
@@ -140,13 +140,13 @@
         <langilea idDEPT="D04">
             <izena>Andoni</izena>
             <abizena>Moran</abizena>
-            <JaiotzeData>1995/06/01</JaiotzeData>
+            <JaiotzeData>1995-06-01</JaiotzeData>
             <telefonoak>
-                <telefonoa>689 875 723</telefonoa>
+                <telefonoa>689875723</telefonoa>
             </telefonoak>
             <emaila>andonimora@gmail.com</emaila>
             <soldata moneda="€">1180</soldata>
-            <kontratazioaData>2019/04/21</kontratazioaData>
+            <kontratazioaData>2019-04-21</kontratazioaData>
             <ardurak>
                 <ardura>A02</ardura>
                 <ardura>A04</ardura>
@@ -162,14 +162,14 @@
         <langilea idDEPT="D04">
             <izena>Aimar</izena>
             <abizena>Rial</abizena>
-            <JaiotzeData>1980/04/14</JaiotzeData>
+            <JaiotzeData>1980-04-14</JaiotzeData>
             <telefonoak>
-                <telefonoa>674 864 145</telefonoa>
-                <telefonoa>642 982 746</telefonoa>
+                <telefonoa>674864145</telefonoa>
+                <telefonoa>642982746</telefonoa>
             </telefonoak>
             <emaila>aimarria@gmail.com</emaila>
             <soldata moneda="€">1160</soldata>
-            <kontratazioaData>2014/03/21</kontratazioaData>
+            <kontratazioaData>2014-03-21</kontratazioaData>
             <ardurak>
                 <ardura>A03</ardura>
                 <ardura>A04</ardura>
@@ -185,13 +185,13 @@
         <langilea idDEPT="D02">
             <izena>Eider</izena>
             <abizena>Ugarte</abizena>
-            <JaiotzeData>1992/09/28</JaiotzeData>
+            <JaiotzeData>1992-09-28</JaiotzeData>
             <telefonoak>
-                <telefonoa>689 234 567</telefonoa>
+                <telefonoa>689234567</telefonoa>
             </telefonoak>
             <emaila>eiderugart@gmail.com</emaila>
             <soldata moneda="€">1400</soldata>
-            <kontratazioaData>2018/07/15</kontratazioaData>
+            <kontratazioaData>2018-07-15</kontratazioaData>
             <ardurak>
                 <ardura>A01</ardura>
             </ardurak>
@@ -206,14 +206,14 @@
         <langilea idDEPT="D03">
             <izena>Jon</izena>
             <abizena>Lopez</abizena>
-            <JaiotzeData>1985/12/03</JaiotzeData>
+            <JaiotzeData>1985-12-03</JaiotzeData>
             <telefonoak>
-                <telefonoa>645 987 321</telefonoa>
-                <telefonoa>673 732 632</telefonoa>
+                <telefonoa>645987321</telefonoa>
+                <telefonoa>673732632</telefonoa>
             </telefonoak>
             <emaila>jonlope@gmail.com</emaila>
             <soldata moneda="€">1350</soldata>
-            <kontratazioaData>2013/05/10</kontratazioaData>
+            <kontratazioaData>2013-05-10</kontratazioaData>
             <ardurak>
                 <ardura>A02</ardura>
             </ardurak>
@@ -228,13 +228,13 @@
         <langilea idDEPT="D01">
             <izena>Ane</izena>
             <abizena>Garcia</abizena>
-            <JaiotzeData>1990/07/20</JaiotzeData>
+            <JaiotzeData>1990-07-20</JaiotzeData>
             <telefonoak>
-                <telefonoa>678 456 123</telefonoa>
+                <telefonoa>678456123</telefonoa>
             </telefonoak>
             <emaila>anegarci@gmail.com</emaila>
             <soldata moneda="€">1250</soldata>
-            <kontratazioaData>2017/02/18</kontratazioaData>
+            <kontratazioaData>2017-02-18</kontratazioaData>
             <ardurak>
                 <ardura>A05</ardura>
             </ardurak>
@@ -249,13 +249,13 @@
         <langilea idDEPT="D04">
             <izena>Markel</izena>
             <abizena>Sanchez</abizena>
-            <JaiotzeData>1987/05/09</JaiotzeData>
+            <JaiotzeData>1987-05-09</JaiotzeData>
             <telefonoak>
-                <telefonoa>657 321 789</telefonoa>
+                <telefonoa>657321789</telefonoa>
             </telefonoak>
             <emaila>markelsanche@gmail.com</emaila>
             <soldata moneda="€">1280</soldata>
-            <kontratazioaData>2015/09/03</kontratazioaData>
+            <kontratazioaData>2015-09-03</kontratazioaData>
             <ardurak>
                 <ardura>A03</ardura>
                 <ardura>A04</ardura>
@@ -271,13 +271,13 @@
         <langilea idDEPT="D02">
             <izena>Maite</izena>
             <abizena>Lopez</abizena>
-            <JaiotzeData>1993/08/05</JaiotzeData>
+            <JaiotzeData>1993-08-05</JaiotzeData>
             <telefonoak>
-                <telefonoa>678 456 789</telefonoa>
+                <telefonoa>678456789</telefonoa>
             </telefonoak>
             <emaila>maitelopez@gmail.com</emaila>
             <soldata moneda="€">1350</soldata>
-            <kontratazioaData>2021/03/10</kontratazioaData>
+            <kontratazioaData>2021-03-10</kontratazioaData>
             <ardurak>
                 <ardura>A01</ardura>
             </ardurak>
@@ -292,13 +292,13 @@
         <langilea idDEPT="D03">
             <izena>Julen</izena>
             <abizena>Sanchez</abizena>
-            <JaiotzeData>1991/06/15</JaiotzeData>
+            <JaiotzeData>1991-06-15</JaiotzeData>
             <telefonoak>
-                <telefonoa>657 321 654</telefonoa>
+                <telefonoa>657321654</telefonoa>
             </telefonoak>
             <emaila>julensanchez@gmail.com</emaila>
             <soldata moneda="€">1280</soldata>
-            <kontratazioaData>2019/09/25</kontratazioaData>
+            <kontratazioaData>2019-09-25</kontratazioaData>
             <ardurak>
                 <ardura>A03</ardura>
                 <ardura>A04</ardura>
@@ -314,13 +314,13 @@
         <langilea idDEPT="D04">
             <izena>Irati</izena>
             <abizena>Alonso</abizena>
-            <JaiotzeData>1994/03/28</JaiotzeData>
+            <JaiotzeData>1994-03-28</JaiotzeData>
             <telefonoak>
-                <telefonoa>689 987 654</telefonoa>
+                <telefonoa>689987654</telefonoa>
             </telefonoak>
             <emaila>iratialonso@gmail.com</emaila>
             <soldata moneda="€">1180</soldata>
-            <kontratazioaData>2020/07/15</kontratazioaData>
+            <kontratazioaData>2020-07-15</kontratazioaData>
             <ardurak>
                 <ardura>A02</ardura>
                 <ardura>A04</ardura>
@@ -336,13 +336,13 @@
         <langilea idDEPT="D01">
             <izena>Unai</izena>
             <abizena>Ortega</abizena>
-            <JaiotzeData>1993/11/02</JaiotzeData>
+            <JaiotzeData>1993-11-02</JaiotzeData>
             <telefonoak>
-                <telefonoa>645 789 321</telefonoa>
+                <telefonoa>645789321</telefonoa>
             </telefonoak>
             <emaila>unaiortega@gmail.com</emaila>
             <soldata moneda="€">1250</soldata>
-            <kontratazioaData>2018/05/20</kontratazioaData>
+            <kontratazioaData>2018-05-20</kontratazioaData>
             <ardurak>
                 <ardura>A05</ardura>
             </ardurak>
@@ -357,13 +357,13 @@
         <langilea idDEPT="D04">
             <izena>Maider</izena>
             <abizena>Mateos</abizena>
-            <JaiotzeData>1992/09/10</JaiotzeData>
+            <JaiotzeData>1992-09-10</JaiotzeData>
             <telefonoak>
-                <telefonoa>657 123 456</telefonoa>
+                <telefonoa>657123456</telefonoa>
             </telefonoak>
             <emaila>maidersanchez@gmail.com</emaila>
             <soldata moneda="€">1160</soldata>
-            <kontratazioaData>2016/08/12</kontratazioaData>
+            <kontratazioaData>2016-08-12</kontratazioaData>
             <ardurak>
                 <ardura>A03</ardura>
                 <ardura>A04</ardura>
@@ -379,13 +379,13 @@
         <langilea idDEPT="D02">
             <izena>Sandra</izena>
             <abizena>Fidalgo</abizena>
-            <JaiotzeData>1995/04/15</JaiotzeData>
+            <JaiotzeData>1995-04-15</JaiotzeData>
             <telefonoak>
-                <telefonoa>678 987 654</telefonoa>
+                <telefonoa>678987654</telefonoa>
             </telefonoak>
             <emaila>sandrafidalgo@gmail.com</emaila>
             <soldata moneda="€">1300</soldata>
-            <kontratazioaData>2020/01/05</kontratazioaData>
+            <kontratazioaData>2020-01-05</kontratazioaData>
             <ardurak>
                 <ardura>A01</ardura>
             </ardurak>
@@ -402,44 +402,34 @@
         <ardura id="A01">
             <izena>Zuzendari Exekutiboa</izena>
             <siglak>CEO</siglak>
-            <deskribapena>
-                Kudeaketa egiten du, administratzen du eta zuzendaritza ematen du enpresak nora jo
-                behar duen adierazteko.
-            </deskribapena>
+            <deskribapena> Kudeaketa egiten du, administratzen du eta zuzendaritza ematen du
+                enpresak nora jo behar duen adierazteko. </deskribapena>
         </ardura>
         <ardura id="A02">
             <izena>Lan zuzendaria</izena>
             <siglak>COO</siglak>
-            <deskribapena>
-                Plan estrategikoak ezartzeko eta negozioaren eragiketa guztiak aurreikusitako
-                denboran eta
-                kostuan bere helburuak lortzen dituela ziurtatzeko arduraduna.
-            </deskribapena>
+            <deskribapena> Plan estrategikoak ezartzeko eta negozioaren eragiketa guztiak
+                aurreikusitako denboran eta kostuan bere helburuak lortzen dituela ziurtatzeko
+                arduraduna. </deskribapena>
         </ardura>
         <ardura id="A03">
             <izena>Zuzendari komertziala</izena>
             <siglak>CSO</siglak>
-            <deskribapena>
-                Gehieneko kargua da salmenta-sailaren barruan, eta haren funtzio nagusia da
-                plangintza
-                estrategikoaren helburuekin eta ikuspegiarekin bat datozen salmenta-planak ezartzea.
-            </deskribapena>
+            <deskribapena> Gehieneko kargua da salmenta-sailaren barruan, eta haren funtzio nagusia
+                da plangintza estrategikoaren helburuekin eta ikuspegiarekin bat datozen
+                salmenta-planak ezartzea. </deskribapena>
         </ardura>
         <ardura id="A04">
             <izena>Marketineko zuzendaria</izena>
             <siglak>CMO</siglak>
-            <deskribapena>
-                Marketinarekin lotuta jarraitu beharreko helburuak eta politikak ezartzea.
-                Merkatua eta lehia aztertzea.
-            </deskribapena>
+            <deskribapena> Marketinarekin lotuta jarraitu beharreko helburuak eta politikak
+                ezartzea. Merkatua eta lehia aztertzea. </deskribapena>
         </ardura>
         <ardura id="A05">
             <izena>Giza Baliabideen zuzendaria</izena>
             <siglak>CHRO</siglak>
-            <deskribapena>
-                Langileen jarduerak eta lan-harremanak planifikatu, zuzendu eta koordinatzea,
-                baita konpainia baten politikak eta praktikak ere.
-            </deskribapena>
+            <deskribapena> Langileen jarduerak eta lan-harremanak planifikatu, zuzendu eta
+                koordinatzea, baita konpainia baten politikak eta praktikak ere. </deskribapena>
         </ardura>
     </ardurak>
 </enpresa>
