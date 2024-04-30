@@ -1,19 +1,22 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0" >
-    <xsl:output method="html" version="5"></xsl:output>
-    <xsl:template match="/enpresa">
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:param name="id"></xsl:param>
+    <xsl:param name="izena"></xsl:param>
+    <xsl:template match="enpresa">
         <html>
             <head>
                 <title>JPAM Langileak</title>
                 <link rel="stylesheet" type="text/css" href="../css/main.css" />
                 <link rel="stylesheet" type="text/css" href="../css/enpresa.css" />
                 <link rel="shortcut icon" href="../img/logo/BlancoTransparente.png" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </head>
             <body>
                 <header>
                     <img id="headerLogoa" src="../img/logo/BlancoTransparente.png" alt="logoa" />
-                    <h1><xsl:value-of select="@izena"/></h1>
+                    <h1>
+                        <xsl:value-of select="@izena" />
+                    </h1>
                     <h3>"Zure erritmoa, gure pasioa"</h3>
                 </header>
                 <div class="primary-nav">
@@ -41,39 +44,48 @@
                     </nav>
                 </div>
                 <main>
-                  <div id="langileak">
+                    <h1>
+                        <xsl:attribute name="class">tituluaLang</xsl:attribute>
+                        <xsl:value-of select="$izena"></xsl:value-of>
+                        langileak:
+                    </h1>
+                    <div id="langileak">
                         <xsl:for-each select="//langilea">
-                          <div class="langilekutxa">
-                            <div class = "langileIzena">
-                                <img>
-                                    <xsl:attribute name="src"><xsl:value-of select="argazkia"></xsl:value-of></xsl:attribute>
-                                    <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
-                                  </img>
-                                  <p><xsl:value-of select="izena"></xsl:value-of></p>
-                            </div>
-                            <div class = "langileinfo">
-                                <p>Abizena: <xsl:value-of select="abizena"></xsl:value-of></p>
-                                <p>Jaiotze-Data: <xsl:value-of select="JaiotzeData"></xsl:value-of></p>
-                                <p>Emaila: <xsl:value-of select="emaila"></xsl:value-of></p>
-                                <p>Kontratazio data: <xsl:value-of select="kontratazioaData"></xsl:value-of></p>
-                                <p>Soldata: <xsl:value-of select="soldata">€</xsl:value-of></p>
-                                <p>Helbidea: <xsl:value-of select="bizilekua/helbidea"></xsl:value-of></p>
-                                <p>Herria: <xsl:value-of select="bizilekua/herria"></xsl:value-of></p>
-                                <p>Posta Kodea: <xsl:value-of select="bizilekua/postaKodea"></xsl:value-of></p>
-                              </div>
-                          </div>
+                            <xsl:if test="@idDEPT=$id">
+                                <div class="langilekutxa">
+                                    <div class="langileIzena">
+                                        <img>
+                                            <xsl:attribute name="src"><xsl:value-of
+                                                    select="argazkia"></xsl:value-of></xsl:attribute>
+                                            <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
+                                        </img>
+                                        <p>
+                                            <xsl:value-of select="izena"></xsl:value-of>
+                                        </p>
+                                    </div>
+                                    <div class="langileinfo">
+                                        <p>Abizena: <xsl:value-of select="abizena"></xsl:value-of></p>
+                                        <p>Jaiotze-Data: <xsl:value-of select="JaiotzeData"></xsl:value-of></p>
+                                        <p>Emaila: <xsl:value-of select="emaila"></xsl:value-of></p>
+                                        <p>Kontratazio data: <xsl:value-of select="kontratazioaData"></xsl:value-of></p>
+                                        <p>Soldata: <xsl:value-of select="soldata">€</xsl:value-of></p>
+                                        <p>Helbidea: <xsl:value-of select="bizilekua/helbidea"></xsl:value-of></p>
+                                        <p>Herria: <xsl:value-of select="bizilekua/herria"></xsl:value-of></p>
+                                        <p>Posta Kodea: <xsl:value-of select="bizilekua/postaKodea"></xsl:value-of></p>
+                                    </div>
+                                </div>
+                            </xsl:if>
                         </xsl:for-each>
-                  </div>
+                    </div>
                 </main>
                 <footer>
                     <div id="footerKutxa1">
-                      <ul>
-                        <li>Kontaktu email-a: 
-                          <a href="">jpammusic@gmail.com</a>
-                        </li>
-                        <li>Helbidea: Etxepare, 14, Elorrieta</li>
-                        <li>Telefonoa: +643 348 865</li>
-                    </ul> 
+                        <ul>
+                            <li>Kontaktu email-a: <a href="">jpammusic@gmail.com</a>
+                            </li>
+                            <li>Helbidea: Etxepare, 14, Elorrieta</li>
+                            <li>Telefonoa: +643 348 865</li>
+                        </ul>
                     </div>
                     <div id="footerKutxa2">
                         <ul>
@@ -113,4 +125,5 @@
             </body>
         </html>
     </xsl:template>
+
 </xsl:stylesheet>

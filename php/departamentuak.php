@@ -1,14 +1,32 @@
 <?php
+session_start();
 
-   $arauak = new DOMDocument();
-   $arauak ->load("../XML/departamentuak.xsl");
+$departamentuak = array(
+    "D01" => "Marketing",
+    "D02" => "RRHH",
+    "D03" => "Salmentak",
+    "D04" => "Logistika",
+    "D05" => "Finantzak",
+    "D06" => "Teknologia"
+);
 
-   $datuak = new DOMDocument();
-   $datuak->load("../XML/departamentuak.xml");
+$arauak = new DOMDocument();
+$arauak->load("../XML/departamentuak.xsl");
 
-   $proc = new XSLTProcessor();
-   $proc->importStylesheet($arauak);
+$datuak = new DOMDocument();
+$datuak->load("../XML/departamentuak.xml");
 
-   echo $proc->transformToXML($datuak);
+$proc = new XSLTProcessor();
+$proc->importStylesheet($arauak);
 
+echo $proc->transformToXML($datuak);
+
+if (isset($_GET["id_depto"]) && isset($departamentuak[$_GET["id_depto"]])) {
+    $departamentua = $_GET['id_depto'];
+    $departamentuIzena = $departamentuak[$_GET["id_depto"]]; 
+    $_SESSION["departamentuIzena"] = $departamentuIzena;
+    $_SESSION["departamentuID"] = $departamentua;
+    header("Location: DeptLang.php");
+    exit();
+}
 ?>

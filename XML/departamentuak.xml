@@ -311,7 +311,7 @@
             <argazkia>../img/langileak/Julen.png</argazkia>
         </langilea>
         <!-- Langile 13 -->
-        <langilea idDEPT="D04">
+        <langilea idDEPT="D06">
             <izena>Irati</izena>
             <abizena>Alonso</abizena>
             <JaiotzeData>1994-03-28</JaiotzeData>
@@ -333,7 +333,7 @@
             <argazkia>../img/langileak/Irati.png</argazkia>
         </langilea>
         <!-- Langile 14 -->
-        <langilea idDEPT="D01">
+        <langilea idDEPT="D05">
             <izena>Unai</izena>
             <abizena>Ortega</abizena>
             <JaiotzeData>1993-11-02</JaiotzeData>
@@ -354,7 +354,7 @@
             <argazkia>../img/langileak/Unai.png</argazkia>
         </langilea>
         <!-- Langile 15 -->
-        <langilea idDEPT="D04">
+        <langilea idDEPT="D06">
             <izena>Maider</izena>
             <abizena>Mateos</abizena>
             <JaiotzeData>1992-09-10</JaiotzeData>
@@ -376,7 +376,7 @@
             <argazkia>../img/langileak/Maider.png</argazkia>
         </langilea>
         <!-- Langile 16 -->
-        <langilea idDEPT="D02">
+        <langilea idDEPT="D05">
             <izena>Sandra</izena>
             <abizena>Fidalgo</abizena>
             <JaiotzeData>1995-04-15</JaiotzeData>

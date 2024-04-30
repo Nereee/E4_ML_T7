@@ -28,6 +28,24 @@
     <xs:simpleType name="pkMota">
         <xs:restriction base="xs:integer">
             <xs:pattern value="48[0-9]{3}"></xs:pattern>
+        </xs:restriction>   
+    </xs:simpleType>
+
+    <xs:simpleType name="siglakMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{3,}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idDeptMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="D[0-9]{2,}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idArduraMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="A[0-9]{2,}"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
 
@@ -71,7 +89,7 @@
                                         </xs:element>
                                         <xs:element name="telefonoa" type="telefonoMota"></xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="id"></xs:attribute>
+                                    <xs:attribute name="id" type="idDeptMota"></xs:attribute>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -107,7 +125,7 @@
                                         <xs:element name="ardurak">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="ardura" maxOccurs="2" minOccurs="1" type="xs:string"></xs:element>
+                                                    <xs:element name="ardura" maxOccurs="2" minOccurs="1" type="idArduraMota"></xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
@@ -122,7 +140,7 @@
                                         </xs:element>
                                         <xs:element name="argazkia" type="xs:string"></xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="idDEPT" type="xs:string"></xs:attribute>
+                                    <xs:attribute name="idDEPT" type="idDeptMota"></xs:attribute>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -135,10 +153,10 @@
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="izena" type="xs:string"></xs:element>
-                                        <xs:element name="siglak" type="xs:string"></xs:element>
+                                        <xs:element name="siglak" type="siglakMota"></xs:element>
                                         <xs:element name="deskribapena" type="xs:string"></xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                    <xs:attribute name="id" type="idArduraMota"></xs:attribute>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>

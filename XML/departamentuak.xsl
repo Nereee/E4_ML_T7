@@ -6,9 +6,9 @@
             <head>
                 <title>JPAM Departamentuak</title>
                 <link rel="stylesheet" type="text/css" href="../css/main.css" />
-                <link rel="stylesheet" type="text/css" href="../css/xsl.css" />
+                <link rel="stylesheet" type="text/css" href="../css/enpresa.css" />
                 <link rel="shortcut icon" href="../img/logo/BlancoTransparente.png" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </head>
             <body>
                 <header>
@@ -42,35 +42,39 @@
                         </div>
                     </nav>
                 </div>
-                <main id ="DeptMain">
-                <div class="taulakutxa">
-                  <div class="tauladepart" role="region" tabindex="0">
-                      <table>
-                          <thead>
-                              <tr>
-                                  <th>Departamentu izena</th    >
-                                  <th>Departamentu aurrekontua</th>
-                                  <th>Departamentu telefonoa</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <xsl:for-each select="//departamentua">
-                                  <tr>
-                                      <td class = "DeptIzena">
-                                          <xsl:value-of select="izena"></xsl:value-of>
-                                      </td>
-                                      <td class = "Deptinfo">
-                                          <xsl:value-of select="aurrekontua"></xsl:value-of>
-                                      </td>
-                                      <td class = "Deptinfo">
-                                          <xsl:value-of select="telefonoa"></xsl:value-of>
-                                      </td>
-                                  </tr>
-                              </xsl:for-each>
-                          </tbody>
-                      </table>
+                <main id="DeptMain">
+                    <div class="taulakutxa">
+                        <div class="tauladepart" role="region" tabindex="0">
+                            <form method="GET" action="departamentuak.php">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Departamentu izena</th>
+                                            <th>Departamentu aurrekontua</th>
+                                            <th>Departamentu telefonoa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <xsl:for-each select="//departamentua">
+                                            <tr>
+                                                <td class="DeptIzena">
+                                                    <button type="submit" name="id_depto" value="{@id}">
+                                                        <xsl:value-of select="izena"/>
+                                                    </button>
+                                                </td>                                                
+                                                <td class="Deptinfo">
+                                                    <xsl:value-of select="aurrekontua"></xsl:value-of>
+                                                </td>
+                                                <td class="Deptinfo"> +34 <xsl:value-of
+                                                        select="telefonoa"></xsl:value-of>
+                                                </td>
+                                            </tr>
+                                        </xsl:for-each>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
                     </div>
-                  </div>
                 </main>
                 <footer>
                     <div id="footerKutxa1">
