@@ -27,6 +27,5 @@ if (isset($_GET["id_depto"]) && isset($departamentuak[$_GET["id_depto"]])) {
     $_SESSION["departamentuIzena"] = $departamentuIzena;
     $_SESSION["departamentuID"] = $departamentua;
     header("Location: DeptLang.php");
-    exit();
 }
 ?>
