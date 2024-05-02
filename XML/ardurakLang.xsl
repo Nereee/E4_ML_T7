@@ -46,7 +46,7 @@
                     <xsl:for-each select="//ardura">
                         <xsl:if test="@id=$id">
                             <h1>
-                                <xsl:value-of select="izena"></xsl:value-of> langileak: </h1>
+                                <xsl:value-of select="siglak"></xsl:value-of> langileak: </h1>
                         </xsl:if>
                     </xsl:for-each>
                     <div id="langileak">
@@ -64,14 +64,13 @@
                                         </p>
                                     </div>
                                     <div class="langileinfo">
-                                        <p>Abizena: <xsl:value-of select="abizena"></xsl:value-of></p>
-                                        <p>Jaiotze-Data: <xsl:value-of select="JaiotzeData"></xsl:value-of></p>
-                                        <p>Emaila: <xsl:value-of select="emaila"></xsl:value-of></p>
-                                        <p>Kontratazio data: <xsl:value-of select="kontratazioaData"></xsl:value-of></p>
-                                        <p>Soldata: <xsl:value-of select="soldata">€</xsl:value-of></p>
-                                        <p>Helbidea: <xsl:value-of select="bizilekua/helbidea"></xsl:value-of></p>
-                                        <p>Herria: <xsl:value-of select="bizilekua/herria"></xsl:value-of></p>
-                                        <p>Posta Kodea: <xsl:value-of select="bizilekua/postaKodea"></xsl:value-of></p>
+                                        <xsl:for-each select="//ardura">
+                                            <xsl:if test="@id=$id">
+                                                <p>Ardura: <xsl:value-of select="izena"></xsl:value-of></p>
+                                                <p>Arduren siglak: <xsl:value-of select="siglak"></xsl:value-of></p>
+                                                <p>Deskribapena: <xsl:value-of select="deskribapena"></xsl:value-of></p>
+                                            </xsl:if>
+                                        </xsl:for-each>
                                     </div>
                                 </div>
                             </xsl:if>

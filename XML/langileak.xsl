@@ -128,7 +128,6 @@
                     </div>
                 </footer>
                 <script src="../js/menu.js"></script>
-                <script src="../js/ardurakLang.js"></script>
             </body>
         </html>
     </xsl:template>
