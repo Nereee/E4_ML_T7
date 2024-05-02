@@ -4,7 +4,7 @@
     <xsl:template match="enpresa">
         <html>
             <head>
-                <title>JPAM Langileak</title>
+                <title>JPAM Ardurak</title>
                 <link rel="stylesheet" type="text/css" href="../css/main.css" />
                 <link rel="stylesheet" type="text/css" href="../css/enpresa.css" />
                 <link rel="shortcut icon" href="../img/logo/BlancoTransparente.png" />
@@ -43,7 +43,7 @@
                     </nav>
                 </div>
                 <main>
-                    <xsl:for-each select="//departamentua">
+                    <xsl:for-each select="//ardura">
                         <xsl:if test="@id=$id">
                             <h1>
                                 <xsl:value-of select="izena"></xsl:value-of> langileak: </h1>
@@ -51,7 +51,7 @@
                     </xsl:for-each>
                     <div id="langileak">
                         <xsl:for-each select="//langilea">
-                            <xsl:if test="@idDEPT=$id">
+                            <xsl:if test="ardurak/ardura=$id">
                                 <div class="langilekutxa">
                                     <div class="langileIzena">
                                         <img>

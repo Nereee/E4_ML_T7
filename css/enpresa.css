@@ -46,6 +46,31 @@
     font-weight: bold;
 }
 
+.arduraAukera {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 20px;
+}
+
+.arduraAukera label {
+	font-size: 20px;
+}	
+
+#ardura {
+	width: 200px;
+	padding: 5px;
+	margin: 5px 0;
+	border-radius: 5px;
+	border: 1px solid #e9e9e9;
+	background-color: #1e1e1e;
+}
+
+#ardura option {
+	padding: 5px;
+	background-color: #1e1e1e;
+}
+
 #DeptMain {
 	display: flex;
 	justify-content: center;

@@ -2,10 +2,10 @@
     session_start();
     /* Departamentu bateko langileak erakusteko*/
 
-    $departamentuID = $_SESSION["departamentuID"];
+    $arduraID = $_SESSION["arduraID"];
 
    $arauak = new DOMDocument();
-   $arauak ->load("../XML/deptLang.xsl");
+   $arauak ->load("../XML/ardurakLang.xsl");
 
    $datuak = new DOMDocument();
    $datuak->load("../XML/departamentuak.xml");
@@ -13,7 +13,7 @@
    $proc = new XSLTProcessor();
    $proc->importStylesheet($arauak);
 
-   $proc ->setParameter("", "id", $departamentuID);
+   $proc ->setParameter("", "id", $arduraID);
 
    echo $proc->transformToXML($datuak);
 

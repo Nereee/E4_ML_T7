@@ -6,7 +6,7 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
     $servername = "localhost";
     $username = $_POST['erabiltzailea'];
     $password = $_POST['pasahitza'];
-    $db = "db_jpamt7";
+    $db = "db_JPamt7";
 
     try {
         $mysqli = new mysqli($servername, $username, $password, $db);

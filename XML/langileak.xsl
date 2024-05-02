@@ -41,6 +41,20 @@
                     </nav>
                 </div>
                 <main>
+                    <div class="arduraAukera">
+                        <form id="formArdura" method="GET" action="langileak.php">
+                            <label for="ardura">Aukeratu ardura: </label>
+                            <select id="ardura" name="ardura" onchange="this.form.submit()">
+                                <option selected="true" disabled="disabled">Ardurak</option>
+                                <xsl:for-each select="//ardura[@id]">
+                                    <option>
+                                        <xsl:attribute name="value"><xsl:value-of select="@id"></xsl:value-of></xsl:attribute>
+                                        <xsl:value-of select="izena"></xsl:value-of>
+                                    </option>
+                                </xsl:for-each>  
+                            </select>
+                        </form>
+                    </div>
                     <div id="langileak">
                         <xsl:for-each select="//langilea">
                             <div class="langilekutxa">
@@ -70,7 +84,9 @@
                 <footer>
                     <div id="footerKutxa1">
                         <ul>
-                            <li>Kontaktu email-a: <a href="">jpammusic@gmail.com</a>
+                            <li>Kontaktu email-a: <a
+                                    href="https://www.google.com/intl/es/gmail/about/">
+        jpammusic@gmail.com</a>
                             </li>
                             <li>Helbidea: Etxepare, 14, Elorrieta</li>
                             <li>Telefonoa: +643 348 865</li>
@@ -79,10 +95,10 @@
                     <div id="footerKutxa2">
                         <ul>
                             <li>
-                                <a href="#">Lege informazioa</a>
+                                <a href="https://creativecommons.org">Lege informazioa</a>
                             </li>
                             <li>
-                                <a href="#">Pribatutasun politika</a>
+                                <a href="https://creativecommons.org">Pribatutasun politika</a>
                             </li>
                         </ul>
                     </div>
@@ -101,6 +117,7 @@
                                 <img src="../img/apps/twitter.png" alt="twitter" />
                             </a>
                         </div>
+
                         <div class="creative-commons">
                             <a rel="license"
                                 href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
@@ -111,6 +128,7 @@
                     </div>
                 </footer>
                 <script src="../js/menu.js"></script>
+                <script src="../js/ardurakLang.js"></script>
             </body>
         </html>
     </xsl:template>
