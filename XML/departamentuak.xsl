@@ -51,8 +51,8 @@
                                     <thead>
                                         <tr>
                                             <th>Departamentu izena</th>
-                                            <th>Departamentu aurrekontua</th>
-                                            <th>Departamentu telefonoa</th>
+                                            <th>Aurrekontua</th>
+                                            <th>Telefonoa</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -69,7 +69,7 @@
                                                     </button>
                                                 </td>
                                                 <td class="Deptinfo">
-                                                    <xsl:value-of select="aurrekontua"></xsl:value-of>
+                                                    <xsl:value-of select="aurrekontua"></xsl:value-of><xsl:text> €</xsl:text>
                                                 </td>
                                                 <td class="Deptinfo"> +34 <xsl:value-of
                                                         select="telefonoa"></xsl:value-of>
