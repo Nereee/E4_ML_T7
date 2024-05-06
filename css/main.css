@@ -249,6 +249,7 @@ footer {
     display: flex;
     flex-direction: row;
     background-color: rgb(33, 33, 33);
+    margin-top: 20px;
     padding: 20px;
     justify-content: space-evenly;
     border-top: 2px solid #FBFBFB;

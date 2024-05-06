@@ -1,0 +1,73 @@
+
+#langileaArd {
+	display: grid;
+	grid-template-rows: repeat(auto-fit, 250px);
+	margin: 20px 0 50px 0;
+	grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 0.2fr));
+}
+
+#langileak img {
+	width: 1000000000000000000000000000px;
+}
+
+.tituluaLang {
+    margin-top: 20px;
+}
+
+.langilekutxa {
+    padding: 5px;
+    background-color: #1878C8;
+    border: 2px solid #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    transition: all 1s; 
+}
+
+.langilekutxa:hover {
+    transform: scale(1.05); 
+    z-index: 1005;
+}
+
+.langileinfo {
+    display: none; 
+    text-align: left;
+}
+
+.langilekutxa:hover .langileinfo {
+    display: block; 
+}
+
+
+.langilekutxa p {
+    font-weight: bold;
+}
+
+.arduraAukera {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 20px;
+}
+
+.arduraAukera label {
+	font-size: 20px;
+}	
+
+#ardura {
+	width: 200px;
+	padding: 5px;
+	margin: 5px 0;
+	border-radius: 5px;
+	border: 1px solid #e9e9e9;
+	background-color: #1e1e1e;
+}
+
+#ardura option {
+	padding: 5px;
+	background-color: #1e1e1e;
+}

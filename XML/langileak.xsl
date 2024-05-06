@@ -54,6 +54,7 @@
                                 </xsl:for-each>  
                             </select>
                         </form>
+                        <button id="DEPTAukeraBTN" onclick="window.location.href = 'departamentuak.php'">Ikusi Departamentuak</button>
                     </div>
                     <div id="langileak">
                         <xsl:for-each select="//langilea">
