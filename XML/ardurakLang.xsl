@@ -50,7 +50,7 @@
                                     <xsl:value-of select="siglak"></xsl:value-of> langileak: </h1>
                             </xsl:if>
                         </xsl:for-each>
-                        <button id="AtzeraBTN" onclick="window.location.href = 'langileak.php'">Beste ardura aukeratu</button>
+                        <button id="NavBTN" onclick="window.location.href = 'langileak.php'">Itzuli</button>
                     </div>
                     <div id="langileaArd">
                         <xsl:for-each select="//langilea">

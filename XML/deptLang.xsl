@@ -43,12 +43,15 @@
                     </nav>
                 </div>
                 <main>
-                    <xsl:for-each select="//departamentua">
+                    <div id="DeptLangKutxa">
+                        <xsl:for-each select="//departamentua">
                         <xsl:if test="@id=$id">
                             <h1>
                                 <xsl:value-of select="izena"></xsl:value-of> langileak: </h1>
                         </xsl:if>
                     </xsl:for-each>
+                    <button id="NavBTN" onclick="window.location.href = 'departamentuak.php'">Beste departamentu aukeratu</button>
+                    </div>
                     <div id="langileak">
                         <xsl:for-each select="//langilea">
                             <xsl:if test="@idDEPT=$id">

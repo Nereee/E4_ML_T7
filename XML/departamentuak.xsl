@@ -41,9 +41,13 @@
                     </nav>
                 </div>
                 <main id="DeptMain">
-                    <h1>JPAM Departamentuak:</h1>
-                    <p>Gure enpresetik ahalbidetzen duten espezializatutako departamentu asko
-        ezagutu</p>
+                    <div id="DeptInfoEtaBTN">
+                        <div id="DeptInfo">
+                            <h1>JPAM Departamentuak:</h1>
+                            <p>Gure enpresetik ahalbidetzen duten espezializatutako departamentu asko ezagutu</p>
+                        </div>
+                            <button id="NavBTN" onclick="window.location.href = 'langileak.php'">Ikusi Langileak</button>
+                    </div>
                     <div class="taulakutxa">
                         <div class="tauladepart">
                             <form method="GET" action="departamentuak.php">

@@ -43,7 +43,7 @@
                 <main>
                     <div class="arduraAukera">
                         <form id="formArdura" method="GET" action="langileak.php">
-                            <label for="ardura">Aukeratu ardura: </label>
+                            <label for="ardura">Aukeratu ardura:</label>
                             <select id="ardura" name="ardura" onchange="this.form.submit()">
                                 <option selected="true" disabled="disabled">Ardurak</option>
                                 <xsl:for-each select="//ardura[@id]">
@@ -54,7 +54,7 @@
                                 </xsl:for-each>  
                             </select>
                         </form>
-                        <button id="DEPTAukeraBTN" onclick="window.location.href = 'departamentuak.php'">Ikusi Departamentuak</button>
+                        <button id="NavBTN" onclick="window.location.href = 'departamentuak.php'">Ikusi Departamentuak</button>
                     </div>
                     <div id="langileak">
                         <xsl:for-each select="//langilea">
