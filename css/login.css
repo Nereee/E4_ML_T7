@@ -6,11 +6,14 @@
     font-family: "Trebuchet MS";
   }
   
+
+  /* Hondoaren gradiantea */
   body {
     background-image: linear-gradient(180deg, #7d4159 0, #773959 12.5%, 
     #6f3159 25%, #652859 37.5%, #591f59 50%, #4b185a 62.5%, #3a135b 75%, #24125d 87.5%, #00125f 100%);
   }
   
+  /* Login kutxa zentratzeko */
   main {
     display: flex;
     justify-content: center;
@@ -18,10 +21,12 @@
     height: 100vh;
   }
   
+  /* Goiko ixa(X), index-era bueltatzeko */
   #buelta {
     width: 40px
   }
   
+  /* Login kutxa */
   .kutxa {
     border-radius: 5% 5%;
     padding: 20px;
@@ -73,6 +78,8 @@
     width: 20px;
   }
 
+
+  /* Botoiak */
   #DeptBTN {
     margin-bottom: 40px;
   }

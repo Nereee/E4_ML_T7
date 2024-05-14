@@ -9,7 +9,7 @@ $datuak = new DOMDocument();
 $datuak->load("../XML/departamentuak.xml");
 
 if (isset($_GET["ardura"])) {
-   $ardura = $_GET['ardura'];
+      $ardura = $_GET['ardura'];
    $_SESSION["arduraID"] = $ardura;
    header("Location: ArdurakLang.php"); 
    exit; 

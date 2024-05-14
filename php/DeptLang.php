@@ -1,6 +1,5 @@
 <?php
     session_start();
-    /* Departamentu bateko langileak erakusteko*/
 
     $departamentuID = $_SESSION["departamentuID"];
 

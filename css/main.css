@@ -16,6 +16,8 @@ body {
     min-height: 100vh;
 }
 
+/* Header atala */
+
 header {
     background-image: url(../img/concierto.png);
     background-position: bottom;
@@ -42,6 +44,10 @@ header h1, h3 {
     width: 120px;
     float: right;
 }
+
+/* Header atala */
+
+/* Menu atala */
 
 .primary-nav {
     position: fixed;
@@ -170,6 +176,10 @@ header h1, h3 {
     overflow: hidden;
   }
 
+/* Menu atala */
+
+/* Main atala */
+
 main {
     flex: 1;
     display: flex;
@@ -236,7 +246,7 @@ main {
     z-index: 999;
 }
 
-
+/* Hover egitean argazkiaren ALT ikusiko da */
 #albumenIMG img:hover + .tooltip2 {
     display: block;
 }
@@ -244,6 +254,10 @@ main {
 #artistenIMG img:hover + .tooltip {
     display: block;
 }
+
+/* Main atala */
+
+/* Footer atala */
 
 footer {
     display: flex;
@@ -297,6 +311,10 @@ footer a:hover {
     width: 88px;
     height: 31px;
 }
+
+/* Footer atala */
+
+/* Responsive */
 
 @media screen and (max-width: 650px) {
     header {

@@ -1,7 +1,6 @@
 <?php
     session_start();
-    /* Departamentu bateko langileak erakusteko*/
-
+    
     $arduraID = $_SESSION["arduraID"];
 
    $arauak = new DOMDocument();
