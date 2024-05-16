@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="telefonoMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{9}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailaMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="monedaMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="€"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="diruaMota">
+            <xs:restriction base="xs:int">
+                <xs:minInclusive value="1100"></xs:minInclusive>
+            </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="pkMota">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="48[0-9]{3}"></xs:pattern>
+        </xs:restriction>   
+    </xs:simpleType>
+
+    <xs:simpleType name="siglakMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{3,}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idDeptMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="D[0-9]{2,}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idArduraMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="A[0-9]{2,}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="enpresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="zentrua">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="helbidea">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="auzoa" type="xs:string"></xs:element>
+                                        <xs:element name="PK" type="pkMota"></xs:element>
+                                        <xs:element name="hiria" type="xs:string"></xs:element>
+                                        <xs:element name="herrialdea" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="telefonoa" type="telefonoMota"></xs:element>
+                            <xs:element name="kontaktuemaila" type="emailaMota"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="departamentuak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="departamentua" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="izena" type="xs:string"></xs:element>
+                                        <xs:element name="departamentuBurua" minOccurs="0" type="xs:string"></xs:element> 
+                                        <xs:element name="aurrekontua">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="diruaMota">
+                                                        <xs:attribute name="moneda" type="monedaMota"></xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="telefonoa" type="telefonoMota"></xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="idDeptMota"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="langileak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="langilea" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="izena" type="xs:string"></xs:element>
+                                        <xs:element name="abizena" type="xs:string"></xs:element>
+                                        <xs:element name="JaiotzeData" type="xs:date"></xs:element>
+                                        <xs:element name="telefonoak">
+                                            <xs:complexType>
+                                                <xs:sequence> 
+                                                    <xs:element name="telefonoa" maxOccurs="2" minOccurs="1" type="telefonoMota"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="emaila" type="emailaMota"></xs:element>
+                                        <xs:element name="soldata">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="diruaMota">
+                                                        <xs:attribute name="moneda" type="monedaMota"></xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="kontratazioaData" type="xs:date"></xs:element>
+                                        <xs:element name="ardurak">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ardura" maxOccurs="2" minOccurs="1" type="idArduraMota"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="bizilekua">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="helbidea" type="xs:string"></xs:element>
+                                                    <xs:element name="herria" type="xs:string"></xs:element>
+                                                    <xs:element name="postaKodea" type="pkMota"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="argazkia" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="idDEPT" type="idDeptMota"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ardurak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ardura" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="izena" type="xs:string"></xs:element>
+                                        <xs:element name="siglak" type="siglakMota"></xs:element>
+                                        <xs:element name="deskribapena" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="idArduraMota"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="izena" type="xs:string"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

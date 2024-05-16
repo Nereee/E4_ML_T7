@@ -1,34 +1,31 @@
 <?php
 session_start();
 
-$error_message = "Ondo"; 
-
 if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
 
     $servername = "localhost";
     $username = $_POST['erabiltzailea'];
     $password = $_POST['pasahitza'];
-    $db = "db_jpamt7";
+    $db = "db_JPamt7";
 
-    $mysqli = new mysqli($servername, $username, $password, $db);
+    try {
+        $mysqli = new mysqli($servername, $username, $password, $db);
+        header("Location: ../html/aukeraketa.html");
+        exit;
 
-    if ($mysqli->connect_error) {
-       // die("Connection failed: " . $mysqli->connect_error);
+        // Salbuespena jaurtzen bada, alert mezua erakutsiko da. Erabiltzailea login.php-ra berriro bidaltzen da.
+    } catch (mysqli_sql_exception $e) {
         echo '<script>
                alert("Erabiltzaile edo pasahitza txarto sartu duzu");
                window.location.href = "login.php";
             </script>';
-        
-    } else {
-        header("Location: ../html/aukeraketa.html");
-        exit;
+        die("Connection failed: " . $e->getMessage());
     }
-
-    $mysqli->close();
 }
 
-
 ?>
+
+
 
 
 <!DOCTYPE html>

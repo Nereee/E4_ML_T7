@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output method="html" version="5"></xsl:output>
-    <xsl:template match="/enpresa">
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:param name="id"></xsl:param>
+    <xsl:template match="enpresa">
         <html>
             <head>
                 <title>JPAM Langileak</title>
@@ -13,7 +13,9 @@
             <body>
                 <header>
                     <img id="headerLogoa" src="../img/logo/BlancoTransparente.png" alt="logoa" />
-                    <h1>JPAM MUSIC</h1>
+                    <h1>
+                        <xsl:value-of select="@izena" />
+                    </h1>
                     <h3>"Zure erritmoa, gure pasioa"</h3>
                 </header>
                 <div class="primary-nav">
@@ -21,13 +23,13 @@
                         <span class="screen-reader-text">Menu</span>
                     </button>
                     <nav class="menu">
-                        <a href="index.html" class="logotype">JPAM<span>MUSIC</span></a>
+                        <a href="../index.html" class="logotype">JPAM<span>MUSIC</span></a>
                         <div class="overflow-container">
                             <ul class="menu-dropdown">
                                 <li>
                                     <a href="../index.html">Hasiera</a>
                                 </li>
-                                <li>
+                                <li class="menu-hasdropdown">
                                     <a href="../html/artistak.html">Artistak</a>
                                 </li>
                                 <li>
@@ -41,44 +43,41 @@
                     </nav>
                 </div>
                 <main>
-                    <div class="arduraAukera">
-                        <form id="formArdura" method="GET" action="langileak.php">
-                            <label for="ardura">Aukeratu ardura:</label>
-                            <select id="ardura" name="ardura" onchange="this.form.submit()">
-                                <option selected="true" disabled="disabled">Ardurak</option>
-                                <xsl:for-each select="//ardura[@id]">
-                                    <option>
-                                        <xsl:attribute name="value"><xsl:value-of select="@id"></xsl:value-of></xsl:attribute>
-                                        <xsl:value-of select="izena"></xsl:value-of>
-                                    </option>
-                                </xsl:for-each>  
-                            </select>
-                        </form>
-                        <button id="NavBTN" onclick="window.location.href = 'departamentuak.php'">Ikusi Departamentuak</button>
+                    <div id="DeptLangKutxa">
+                        <xsl:for-each select="//departamentua">
+                        <xsl:if test="@id=$id">
+                            <h1>
+                                <xsl:value-of select="izena"></xsl:value-of> langileak: </h1>
+                        </xsl:if>
+                    </xsl:for-each>
+                    <button id="NavBTN" onclick="window.location.href = 'departamentuak.php'">Beste departamentu aukeratu</button>
                     </div>
                     <div id="langileak">
                         <xsl:for-each select="//langilea">
-                            <div class="langilekutxa">
-                                <div class="langileIzena">
-                                    <img>
-                                        <xsl:attribute name="src"><xsl:value-of select="argazkia"></xsl:value-of></xsl:attribute>
-                                        <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
-                                    </img>
-                                    <p>
-                                        <xsl:value-of select="izena"></xsl:value-of>
-                                    </p>
+                            <xsl:if test="@idDEPT=$id">
+                                <div class="langilekutxa">
+                                    <div class="langileIzena">
+                                        <img>
+                                            <xsl:attribute name="src"><xsl:value-of
+                                                    select="argazkia"></xsl:value-of></xsl:attribute>
+                                            <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
+                                        </img>
+                                        <p>
+                                            <xsl:value-of select="izena"></xsl:value-of>
+                                        </p>
+                                    </div>
+                                    <div class="langileinfo">
+                                        <p>Abizena: <xsl:value-of select="abizena"></xsl:value-of></p>
+                                        <p>Jaiotze-Data: <xsl:value-of select="JaiotzeData"></xsl:value-of></p>
+                                        <p>Emaila: <xsl:value-of select="emaila"></xsl:value-of></p>
+                                        <p>Kontratazio data: <xsl:value-of select="kontratazioaData"></xsl:value-of></p>
+                                        <p>Soldata: <xsl:value-of select="soldata">€</xsl:value-of></p>
+                                        <p>Helbidea: <xsl:value-of select="bizilekua/helbidea"></xsl:value-of></p>
+                                        <p>Herria: <xsl:value-of select="bizilekua/herria"></xsl:value-of></p>
+                                        <p>Posta Kodea: <xsl:value-of select="bizilekua/postaKodea"></xsl:value-of></p>
+                                    </div>
                                 </div>
-                                <div class="langileinfo">
-                                    <p>Abizena: <xsl:value-of select="abizena"></xsl:value-of></p>
-                                    <p>Jaiotze-Data: <xsl:value-of select="JaiotzeData"></xsl:value-of></p>
-                                    <p>Emaila: <xsl:value-of select="emaila"></xsl:value-of></p>
-                                    <p>Kontratazio data: <xsl:value-of select="kontratazioaData"></xsl:value-of></p>
-                                    <p>Soldata: <xsl:value-of select="soldata">€</xsl:value-of></p>
-                                    <p>Helbidea: <xsl:value-of select="bizilekua/helbidea"></xsl:value-of></p>
-                                    <p>Herria: <xsl:value-of select="bizilekua/herria"></xsl:value-of></p>
-                                    <p>Posta Kodea: <xsl:value-of select="bizilekua/postaKodea"></xsl:value-of></p>
-                                </div>
-                            </div>
+                            </xsl:if>
                         </xsl:for-each>
                     </div>
                 </main>
@@ -132,4 +131,5 @@
             </body>
         </html>
     </xsl:template>
+
 </xsl:stylesheet>

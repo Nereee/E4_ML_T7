@@ -1,0 +1,245 @@
+/* Langileak */
+
+#langileak {
+	display: grid;
+	grid-template-rows: repeat(4, 250px);
+	margin: 20px 0 50px 0;
+	grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(4, minmax(min(150px, 100%), 0.2fr));
+}
+
+#langileaArd {
+	display: grid;
+	grid-template-rows: repeat(auto-fit, 250px);
+	margin: 20px 0 50px 0;
+	grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(4, minmax(min(150px, 100%), 0.2fr));
+}
+
+#langileak img, #langileaArd img {
+	width: 200px;
+}
+
+.tituluaLang {
+    margin-top: 20px;
+}
+
+.langilekutxa {
+    padding: 5px;
+    background-color: #1878C8;
+    border: 2px solid #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    transition: all 1s; 
+}
+
+.langilekutxa:hover {
+    transform: scale(1.05); 
+    z-index: 1005;
+}
+
+.langileinfo {
+    display: none; 
+    text-align: left;
+}
+
+.langilekutxa:hover .langileinfo {
+    display: block; 
+}
+
+
+.langilekutxa p {
+    font-weight: bold;
+}
+
+/* Langileak */
+
+/* Ardurak */
+
+.arduraAukera, #izenaKutxa, #DeptInfoEtaBTN, #DeptLangKutxa {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 20px;
+	z-index: 1000;
+}
+
+.arduraAukera label {
+	font-size: 20px;
+}	
+
+#ardura {
+	width: 200px;
+	padding: 5px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #e9e9e9;
+	background-color: #1e1e1e;
+}
+
+#ardura option {
+	padding: 5px;
+	background-color: #1e1e1e;
+}
+
+/* Ardurak */
+
+/* Departamentuak */
+
+#DeptMain {
+	display: flex;
+	margin: 0 auto;
+	min-width: 1000px;
+}
+
+#DeptInfo {
+	text-align: left;
+}
+
+#DeptMain p {
+	margin: 20px 0 0 0;
+}
+
+#formArdura {
+	justify-content: space-evenly;
+	width: 500px;
+}
+
+#formArdura, #izenaKutxa h1 {
+	display: flex;
+	align-items: center;
+	margin: 0 20px 0 0;
+}
+
+#NavBTN {
+	padding: 5px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: #363636;
+	border: 1px solid #e9e9e9;
+	text-decoration: none;
+	float: right;
+	cursor: pointer;
+	margin: 0 20px 0 0;
+	width: 300px;
+	transition: all 0.5s ease-in-out;
+}
+
+#NavBTN:hover {
+	background-color: #636363;
+	border: #1e1e1e;
+}
+
+/* Departamentuak */
+
+/* Taula departamentuak */
+
+.taulakutxa {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 100%;
+	z-index: 1000;
+}
+
+.tauladepart {
+	overflow-x: auto;
+}
+
+.tauladepart table {
+	margin: 50px;
+	border: 2px solid #1e1e1e;
+	height: 50vh;
+	width: 70vw;
+	table-layout: auto;
+	border-collapse: collapse;
+	border-spacing: 1px;
+	text-align: left;
+}
+
+.tauladepart th {
+	border: 1px solid #363636;
+	background-color: #515151;
+	text-align: center;
+	padding: 20px;
+}
+
+.tauladepart td {
+	border: 1px solid #363636;
+	padding: 5px;
+}
+
+.DeptIzena {
+	background-color: #1e1e1e;
+}
+
+button {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    border: none;
+}
+
+span img {
+	width: 15px;
+	margin-left: 10px;
+}
+
+.Deptinfo {
+	background-color: #636363;
+}
+
+/* Taula departamentuak */
+
+/* Responsive */
+@media screen and (max-width: 1320px) {
+	#langileak, #langileaArd {
+        grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 0.2fr));
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+    .tauladepart table {
+        width: 90vw;
+        min-width: auto;
+    }
+
+	#DeptMain {
+		min-width: 100vw;
+	}
+
+	#DeptMain h1, #DeptMain p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	#NavBTN {
+        margin: 10px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	#DeptInfoEtaBTN {
+		width: 200px;
+		margin: auto;
+		justify-content: center;
+	}
+}
+
+
+
+
